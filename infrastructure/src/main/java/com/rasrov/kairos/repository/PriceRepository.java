@@ -22,5 +22,4 @@ public interface PriceRepository extends JpaRepository<PriceEntity, Integer> {
             @Param("productId") Integer productId,
             @Param("dateTime") LocalDateTime dateTime
     );
-
 }

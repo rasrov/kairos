@@ -22,5 +22,4 @@ public class PriceAdapter implements PriceServicePort {
         return priceRepository.findByBrandIdAndProductIdAndDateTimeBetween(
                 brandId, productId, dateTime);
     }
-
 }

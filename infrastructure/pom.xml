@@ -12,6 +12,11 @@
     <artifactId>kairos-infrastructure</artifactId>
 
     <dependencies>
+        <!-- MODULE -->
+        <dependency>
+            <groupId>com.rasrov.kairos</groupId>
+            <artifactId>kairos-domain</artifactId>
+        </dependency>
         <!-- TEST -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,10 +29,6 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.rasrov.kairos</groupId>
-            <artifactId>kairos-domain</artifactId>
         </dependency>
     </dependencies>
 </project>

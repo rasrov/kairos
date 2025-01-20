@@ -1,4 +1,4 @@
-openapi: 3.0.3
+openapi: 3.1.0
 info:
   title: Kairos definition - OpenAPI 3.0
   description: |-
@@ -20,12 +20,11 @@ paths:
       summary: Find prices by brand, product and date
       operationId: findPrice
       parameters:
-        - name: startDate
+        - name: brandId
           in: query
           schema:
-            type: string
-            format: date-time
-            example: '2020-06-14 16:00:00'
+            type: integer
+            example: 1
           required: true
         - name: productId
           in: query
@@ -33,11 +32,12 @@ paths:
             type: integer
             example: 35455
           required: true
-        - name: brandId
+        - name: startDate
           in: query
           schema:
-            type: integer
-            example: 1
+            type: string
+            format: date-time
+            example: '2020-06-14 16:00:00'
           required: true
       responses:
         '200':

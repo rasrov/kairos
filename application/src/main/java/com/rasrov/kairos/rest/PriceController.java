@@ -37,5 +37,4 @@ public class PriceController {
                 .status(Objects.nonNull(priceResponse.error()) ? HttpStatus.NOT_FOUND : HttpStatus.OK)
                 .body(priceResponse);
     }
-
 }
