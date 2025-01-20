@@ -19,6 +19,7 @@
     <modules>
         <module>application</module>
 		<module>domain</module>
+		<module>infrastructure</module>
 	</modules>
 
 	<dependencyManagement>
