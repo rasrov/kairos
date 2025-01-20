@@ -1,3 +1,5 @@
+package adapter;
+
 import com.rasrov.kairos.adapter.PriceServiceAdapter;
 import com.rasrov.kairos.domain.PriceResponse;
 import com.rasrov.kairos.entity.BrandEntity;
