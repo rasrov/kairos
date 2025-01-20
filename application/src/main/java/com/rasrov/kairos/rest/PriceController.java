@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 @RestController
-@RequestMapping("/price")
+@RequestMapping("price")
 public class PriceController {
 
     private final PriceService priceService;

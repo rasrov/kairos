@@ -22,6 +22,12 @@ spring:
         web: DEBUG
         validation: DEBUG
 
+springdoc:
+  api-docs:
+    enable: true
+  swagger-ui:
+    enable: true
+
 cache:
   duration: 360
   maxSize: 100
