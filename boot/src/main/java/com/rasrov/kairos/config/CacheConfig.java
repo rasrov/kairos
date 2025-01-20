@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 public record CacheConfig(@NotNull Integer duration,
                           @NotNull Integer maxSize) {
 
-    @Profile("pre")
     @Bean
     public Caffeine<Object, Object> caffeineConfig() {
         return Caffeine.newBuilder()
