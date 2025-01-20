@@ -20,6 +20,7 @@
         <module>application</module>
 		<module>domain</module>
 		<module>infrastructure</module>
+		<module>boot</module>
 	</modules>
 
 	<dependencyManagement>
@@ -28,6 +29,11 @@
 			<dependency>
 				<groupId>${project.groupId}</groupId>
 				<artifactId>kairos-application</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>kairos-boot</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
