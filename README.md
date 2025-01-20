@@ -50,3 +50,5 @@ It was built using hexagonal architecture using four modules.
 * `boot` here we can find our application configuration and this is where we have our main file to start application.
 * `domain` this module is used to host our project entities.
 * `infrastructure` here we can find the jpa spring module that is used to connect to our database and manage data through queries.
+
+Additionally, to have a more structured and clean microservice I have made use of clean code and SOLID principles.
