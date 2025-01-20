@@ -1,0 +1,27 @@
+server:
+  port: 5001
+  error:
+    include-message: always
+
+spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:decskill
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        validation: DEBUG
+
+cache:
+  duration: 360
+  maxSize: 100
