@@ -4,29 +4,24 @@ import com.rasrov.kairos.domain.ErrorResponse;
 import com.rasrov.kairos.domain.PriceResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 @RestControllerAdvice
 public class BaseControllerExceptionHandler {
 
-    @ExceptionHandler(value = MethodArgumentNotValidException.class)
-    public ResponseEntity<PriceResponse> handleInvalidDataException(final MethodArgumentNotValidException notValidException) {
-        final List<String> errorMessages = new ArrayList<>();
+    @ExceptionHandler(value = MissingServletRequestParameterException.class)
+    public ResponseEntity<PriceResponse> handleMissingParameter(final MissingServletRequestParameterException requestParameterException) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body(new PriceResponse(null, null, null, null, null, new ErrorResponse(requestParameterException.getMessage())));
+    }
 
-        notValidException.getBindingResult().getAllErrors().forEach((error) -> {
-            String message = error.getDefaultMessage();
-
-            errorMessages.add(message);
-        });
-
-        final String message = String.join(", ", errorMessages);
-
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new PriceResponse(null, null, null, null, null, new ErrorResponse(message)));
+    @ExceptionHandler(value = MethodArgumentTypeMismatchException.class)
+    public ResponseEntity<PriceResponse> handleInvalidDataException(final MethodArgumentTypeMismatchException typeMismatchException) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body(new PriceResponse(null, null, null, null, null, new ErrorResponse(typeMismatchException.getMessage())));
     }
 
 }
