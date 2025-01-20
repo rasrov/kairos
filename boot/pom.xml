@@ -12,6 +12,12 @@
     <artifactId>kairos-boot</artifactId>
 
     <dependencies>
+        <!-- MODULES -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>kairos-infrastructure</artifactId>
+        </dependency>
+
         <!-- CORE -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -21,9 +27,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
+
+        <!-- UTILS -->
         <dependency>
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>caffeine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.2.0</version>
         </dependency>
 
         <!-- TEST -->
@@ -33,5 +46,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>

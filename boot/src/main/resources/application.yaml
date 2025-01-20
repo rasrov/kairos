@@ -7,7 +7,7 @@ spring:
   h2:
     console.enabled: true
   datasource:
-    url: jdbc:h2:mem:decskill
+    url: jdbc:h2:mem:kairos
     username: sa
     password: password
     driverClassName: org.h2.Driver

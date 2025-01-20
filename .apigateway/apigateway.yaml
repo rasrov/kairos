@@ -1,0 +1,107 @@
+openapi: 3.0.3
+info:
+  title: Kairos definition - OpenAPI 3.0
+  description: |-
+    Kairos technical proof
+  contact:
+    email: rasulakhmeddibirov@gmail.com
+  version: 1.0.0
+servers:
+  - url: http://localhost:5001
+    description: localhost
+tags:
+  - name: price
+
+paths:
+  /price:
+    get:
+      tags:
+        - price
+      summary: Find prices by brand, product and date
+      operationId: findPrice
+      parameters:
+        - name: startDate
+          in: query
+          schema:
+            type: string
+            format: date-time
+            example: '2020-06-14 16:00:00'
+          required: true
+        - name: productId
+          in: query
+          schema:
+            type: integer
+            example: 35455
+          required: true
+        - name: brandId
+          in: query
+          schema:
+            type: integer
+            example: 1
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PriceResponse'
+        '400':
+          description: Invalid payload supplied
+        '404':
+          description: Data not found
+        '422':
+          description: Validation exception
+        '500':
+          description: Internal server error
+
+components:
+  schemas:
+    PriceResponse:
+      type: object
+      required:
+        - productId
+        - brandId
+        - fee
+        - effectiveDates
+        - price
+        - error
+      properties:
+        productId:
+          type: integer
+        brandId:
+          type: integer
+        fee:
+          type: integer
+        effectiveDates:
+          $ref: '#/components/schemas/EffectiveDates'
+        price:
+          type: number
+          format: double
+        error:
+          type: string
+      example:
+        productId: 35455
+        brandId: 1
+        fee: 10
+        effectiveDates:
+          startDate: '2020-06-14T15:00:00'
+          endDate: '2020-06-14T18:30:00'
+        price: 35
+        error: 'Not found any price with brand id 1, product id 35455 and date 2020-06-14 16:00:00'
+
+    EffectiveDates:
+      type: object
+      required:
+        - startDate
+        - endDate
+      properties:
+        startDate:
+          type: string
+          format: date-time
+        endDate:
+          type: string
+          format: date-time
+      example:
+        startDate: '2020-06-14T15:00:00'
+        endDate: '2020-06-14T18:30:00'
