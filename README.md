@@ -55,7 +55,7 @@ Just keep in mind to run this project we are using java 21 and spring boot versi
 It was built using hexagonal architecture using four modules.
 
 * `application` here we can find our services and the principal business logic.
-* `boot` here we can find our application configuration and this is where we have our main file to start application.
+* `boot` here we can find our application configuration and this is where we have our main file to start application. Also, here we have web controller.
 * `domain` this module is used to host our project entities.
 * `infrastructure` here we can find the jpa spring module that is used to connect to our database and manage data through queries.
 
