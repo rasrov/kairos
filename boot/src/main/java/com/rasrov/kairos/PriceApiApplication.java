@@ -6,8 +6,8 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching
-public class KairosApplication {
+public class PriceApiApplication {
     public static void main(String[] args) {
-        SpringApplication.run(KairosApplication.class, args);
+        SpringApplication.run(PriceApiApplication.class, args);
     }
 }
