@@ -34,9 +34,7 @@ In this script we can find sql statements to create the entities and sql stateme
 
 This microservice is designed from domain, but we have a swagger layer to make use of the `Api First` methodology.
 
-To run it, we just need to access:
-
-http://localhost:5001/swagger-ui/index.html
+We should start the application, then we can access to http://localhost:5001/swagger-ui/index.html and see all the API definitions.
 
 Additionally, we have the `.apigateway` folder where we can find a yaml file with all the APIs documented.
 
