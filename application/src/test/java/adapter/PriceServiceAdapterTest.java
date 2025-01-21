@@ -1,12 +1,12 @@
 package adapter;
 
-import com.rasrov.kairos.adapter.PriceServiceAdapter;
-import com.rasrov.kairos.domain.PriceResponse;
-import com.rasrov.kairos.entity.BrandEntity;
-import com.rasrov.kairos.entity.PriceEntity;
-import com.rasrov.kairos.entity.PriceListEntity;
-import com.rasrov.kairos.entity.ProductEntity;
-import com.rasrov.kairos.serviceport.PriceServicePort;
+import com.rasrov.price.adapter.PriceServiceAdapter;
+import com.rasrov.price.domain.PriceResponse;
+import com.rasrov.price.entity.BrandEntity;
+import com.rasrov.price.entity.PriceEntity;
+import com.rasrov.price.entity.PriceListEntity;
+import com.rasrov.price.entity.ProductEntity;
+import com.rasrov.price.serviceport.PriceServicePort;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

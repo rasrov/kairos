@@ -1,7 +1,7 @@
-package com.rasrov.kairos.rest;
+package com.rasrov.price.rest;
 
-import com.rasrov.kairos.api.PriceService;
-import com.rasrov.kairos.domain.PriceResponse;
+import com.rasrov.price.api.PriceService;
+import com.rasrov.price.domain.PriceResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

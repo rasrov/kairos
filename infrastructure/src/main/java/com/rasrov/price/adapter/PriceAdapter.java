@@ -1,8 +1,8 @@
-package com.rasrov.kairos.adapter;
+package com.rasrov.price.adapter;
 
-import com.rasrov.kairos.entity.PriceEntity;
-import com.rasrov.kairos.repository.PriceRepository;
-import com.rasrov.kairos.serviceport.PriceServicePort;
+import com.rasrov.price.entity.PriceEntity;
+import com.rasrov.price.repository.PriceRepository;
+import com.rasrov.price.serviceport.PriceServicePort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

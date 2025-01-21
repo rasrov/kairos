@@ -1,6 +1,6 @@
-package com.rasrov.kairos.api;
+package com.rasrov.price.api;
 
-import com.rasrov.kairos.domain.PriceResponse;
+import com.rasrov.price.domain.PriceResponse;
 
 import java.time.LocalDateTime;
 

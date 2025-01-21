@@ -1,6 +1,6 @@
 package rest;
 
-import com.rasrov.kairos.PriceApiApplication;
+import com.rasrov.price.PriceApiApplication;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.rasrov.kairos;
+package com.rasrov.price;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

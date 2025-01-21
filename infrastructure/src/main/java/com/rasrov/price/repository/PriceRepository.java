@@ -1,6 +1,6 @@
-package com.rasrov.kairos.repository;
+package com.rasrov.price.repository;
 
-import com.rasrov.kairos.entity.PriceEntity;
+import com.rasrov.price.entity.PriceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

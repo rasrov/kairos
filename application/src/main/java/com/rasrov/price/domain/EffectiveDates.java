@@ -1,4 +1,4 @@
-package com.rasrov.kairos.domain;
+package com.rasrov.price.domain;
 
 import java.time.LocalDateTime;
 

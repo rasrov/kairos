@@ -1,4 +1,4 @@
-package com.rasrov.kairos.config;
+package com.rasrov.price.config;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,6 @@
-package com.rasrov.kairos.serviceport;
+package com.rasrov.price.serviceport;
 
-import com.rasrov.kairos.entity.PriceEntity;
+import com.rasrov.price.entity.PriceEntity;
 
 import java.time.LocalDateTime;
 import java.util.Set;

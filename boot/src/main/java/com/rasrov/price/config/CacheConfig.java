@@ -1,10 +1,9 @@
-package com.rasrov.kairos.config;
+package com.rasrov.price.config;
 
 import com.github.benmanes.caffeine.cache.Caffeine;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.concurrent.TimeUnit;

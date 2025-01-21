@@ -1,7 +1,7 @@
-package com.rasrov.kairos.rest.handler;
+package com.rasrov.price.rest.handler;
 
-import com.rasrov.kairos.domain.ErrorResponse;
-import com.rasrov.kairos.domain.PriceResponse;
+import com.rasrov.price.domain.ErrorResponse;
+import com.rasrov.price.domain.PriceResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MissingServletRequestParameterException;

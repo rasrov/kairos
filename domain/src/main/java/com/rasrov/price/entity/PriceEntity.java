@@ -1,4 +1,4 @@
-package com.rasrov.kairos.entity;
+package com.rasrov.price.entity;
 
 import jakarta.persistence.*;
 

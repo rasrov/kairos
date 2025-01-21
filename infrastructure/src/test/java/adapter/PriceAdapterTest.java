@@ -1,8 +1,8 @@
 package adapter;
 
-import com.rasrov.kairos.adapter.PriceAdapter;
-import com.rasrov.kairos.entity.PriceEntity;
-import com.rasrov.kairos.repository.PriceRepository;
+import com.rasrov.price.adapter.PriceAdapter;
+import com.rasrov.price.entity.PriceEntity;
+import com.rasrov.price.repository.PriceRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

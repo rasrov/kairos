@@ -1,11 +1,11 @@
-package com.rasrov.kairos.adapter;
+package com.rasrov.price.adapter;
 
-import com.rasrov.kairos.api.PriceService;
-import com.rasrov.kairos.domain.EffectiveDates;
-import com.rasrov.kairos.domain.ErrorResponse;
-import com.rasrov.kairos.domain.PriceResponse;
-import com.rasrov.kairos.entity.PriceEntity;
-import com.rasrov.kairos.serviceport.PriceServicePort;
+import com.rasrov.price.api.PriceService;
+import com.rasrov.price.domain.EffectiveDates;
+import com.rasrov.price.domain.ErrorResponse;
+import com.rasrov.price.domain.PriceResponse;
+import com.rasrov.price.entity.PriceEntity;
+import com.rasrov.price.serviceport.PriceServicePort;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
