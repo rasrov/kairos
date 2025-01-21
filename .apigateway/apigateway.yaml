@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Kairos definition - OpenAPI 3.0
+  title: Price Api definition - OpenAPI 3.0
   description: |-
-    Kairos technical proof
+    Price Api technical proof
   contact:
     email: rasulakhmeddibirov@gmail.com
   version: 1.0.0

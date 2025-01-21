@@ -1,4 +1,4 @@
-# Kairos
+# Price Api
 <details>
   <summary><strong>Table of contents</strong></summary>
 
@@ -6,7 +6,7 @@
     * [ 🧫 H2 Database ](#-h2-database)
     * [ {...} Swagger ](#-swagger)
     * [ 📞 Cache ](#-cache)
-* [ 📦 kairos microservice ](#-kairos-microservice)
+* [ 📦 Price api microservice ](#-price-api-microservice)
 
 </details>
 
@@ -36,7 +36,7 @@ This project is implementing cache in internal memory to make more fast recurren
 
 This is implemented with `caffeine` and configured into `boot` module to make sure we are using a single instance at the application level.
 
-## 📦 kairos microservice
+## 📦 Price Api microservice
 
 This microservice is designed to obtain the price of a product based on certain parameters that we can use as filters or requirements.
 
