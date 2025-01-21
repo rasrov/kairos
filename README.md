@@ -12,6 +12,16 @@
 
 ## 🏁 Getting Started
 
+To start the application it's pretty easy.
+
+Keep in mind the application doesn't run on the default port, runs on port `5001`.
+
+To build and run this microservice, we should use:
+* `jkd 21`
+* `price-api-boot` module
+* `com.rasrov.price.PriceApiApplication.class` located in `price-api-boot` module is the main file
+
+After starting the application, we can review the API documentation generated with Swagger. For more information, check [ {...} Swagger ](#-swagger)
 ### 🧫 H2 Database
 
 This project are managing data into H2 to simplify the project and because it was a requirement in technical specifications.
