@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.rasrov.kairos</groupId>
-        <artifactId>kairos</artifactId>
+        <groupId>com.rasrov.price-api</groupId>
+        <artifactId>price-api</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>kairos-infrastructure</artifactId>
+    <artifactId>price-api-infrastructure</artifactId>
 
     <dependencies>
         <!-- MODULE -->
         <dependency>
-            <groupId>com.rasrov.kairos</groupId>
-            <artifactId>kairos-domain</artifactId>
+            <groupId>com.rasrov.price-api</groupId>
+            <artifactId>price-api-domain</artifactId>
         </dependency>
         <!-- TEST -->
         <dependency>

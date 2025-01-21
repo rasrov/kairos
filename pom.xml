@@ -8,12 +8,11 @@
 		<version>3.4.1</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.rasrov.kairos</groupId>
-	<artifactId>kairos</artifactId>
+	<groupId>com.rasrov.price-api</groupId>
+	<artifactId>price-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>kairos</name>
-	<description>Demo for kairos</description>
+    <name>price-api</name>
 
     <modules>
         <module>application</module>
@@ -31,22 +30,22 @@
 			<!-- MODULES -->
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>kairos-application</artifactId>
+				<artifactId>price-api-application</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>kairos-boot</artifactId>
+				<artifactId>price-api-boot</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>kairos-domain</artifactId>
+				<artifactId>price-api-domain</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>kairos-infrastructure</artifactId>
+				<artifactId>price-api-infrastructure</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
